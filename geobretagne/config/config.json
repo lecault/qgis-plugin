@@ -1,0 +1,157 @@
+{
+  "title": "GéoGrandEst",
+  "description": "",
+  "type": "folder",
+  "children": [{
+      "title": "Fonds raster",
+      "description": "Fonds cartographique décrivant la nature du terrain",
+      "type": "folder",
+      "children": [{
+          "title": "Scan 25",
+          "description": "Scan25 (version topographique) de l'IGN Bretagne",
+          "type": "wms_layer",
+          "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-SCAN25-2005-CIGAL",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "carte",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Ortho",
+          "description": "Ortho",
+		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "satellite",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        }
+		]
+	},
+	  {
+	  "title": "Fonds OpenStreetMap",
+      "description": "Fonds OpenStreetMap",
+      "type": "folder",
+      "children":[{
+      "title": "OpenStreetMap - style Google",
+      "description": "Fond de plan OpenStreetMap élaboré par GéoBretagne - style Google",
+	  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6d5e8af2-070e-45ab-96c0-fe7938a5d853",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.geobretagne.fr/gwc01/service/wms?tiled=true",
+            "name": "osm:google",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "OpenStreetMap - style default",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoBretagne - style Default",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b9db6b2-8dec-4aa2-abef-8f627267cc64",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.geobretagne.fr/gwc01/service/wms?tiled=true",
+            "name": "osm:map",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "OpenStreetMap - style bing",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoBretagne - style Bing",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cd931771-fb8f-46d8-bd73-8f7fbbd356d8",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.geobretagne.fr/gwc01/service/wms?tiled=true",
+            "name": "osm:bing",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        }
+
+      ]
+    },
+    {
+      "title": "Limites administratives",
+      "description": "Données concernant les limites administratives",
+      "type": "folder",
+      "children": [{
+          "title": "Régions",
+          "description": "Limites des régions basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=8b9bc237-0195-46f7-b92e-d923257e4b05",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/geo_loc/wfs",
+            "version": "2.0.0",
+            "name": "REGION",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Departements",
+          "description": "Limites des départements basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
+            "version": "2.0.0",
+            "name": "departement_metro",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "EPCI",
+          "description": "Limites des EPCI à fiscalité propre basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "EPCI_053",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "Communes",
+          "description": "Limites des communes basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
+            "version": "2.0.0",
+            "name": "commune_metro",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Périmètre des SCOT",
+          "description": "Schémas de Cohérence Territoriaux de Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91117783-14f0-409c-961e-9d2645f248ea",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "n_scot",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Périmètre des Pays et PETR",
+          "description": "Données des Pays et PETR de Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "n_pays",
+            "srs": "epsg:2154"
+          }
+        }
+      ]
+    }
+  ]
+}

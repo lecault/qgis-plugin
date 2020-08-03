@@ -3,7 +3,7 @@
 from qgis.PyQt.QtWidgets import QWidget, QDialog, QVBoxLayout, QLabel, QTextEdit, QFrame
 from qgis.PyQt.QtGui import QPixmap
 
-from geograndest.utils.plugin_globals import PluginGlobals
+from geobretagne.utils.plugin_globals import PluginGlobals
 
 
 class AboutBox(QDialog):

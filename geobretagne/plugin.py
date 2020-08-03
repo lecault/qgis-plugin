@@ -5,12 +5,12 @@ from qgis.PyQt.QtCore import Qt
 
 import os.path
 
-from geograndest.utils.plugin_globals import PluginGlobals
-from geograndest.gui.dock import DockWidget
-from geograndest.gui.about_box import AboutBox
-from geograndest.gui.param_box import ParamBox
-from geograndest.nodes.tree_node_factory import TreeNodeFactory
-from geograndest.nodes.tree_node_factory import download_tree_config_file
+from geobretagne.utils.plugin_globals import PluginGlobals
+from geobretagne.gui.dock import DockWidget
+from geobretagne.gui.about_box import AboutBox
+from geobretagne.gui.param_box import ParamBox
+from geobretagne.nodes.tree_node_factory import TreeNodeFactory
+from geobretagne.nodes.tree_node_factory import download_tree_config_file
 
 
 class SimpleAccessPlugin:
