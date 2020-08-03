@@ -21,7 +21,7 @@ class DockWidget(QDockWidget):
     def init_gui(self):
         """
         """
-        self.setWindowTitle(u'GéoGrandEst')
+        self.setWindowTitle(u'GéoBretagne')
         self.setAllowedAreas(Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
 
         self.treeWidget = TreeWidget()

@@ -88,7 +88,7 @@ class ParamBox(QDialog):
         self.button_box.button(QDialogButtonBox.Apply).clicked.connect(self.apply_button_clicked)
 
         # Dialog box title, layout, size and display
-        title = u"Paramétrage de l'extension GéoGrandEst…"
+        title = u"Paramétrage de l'extension GéoBretagne…"
         self.setWindowTitle(title)
         dlg_layout.addWidget(self.button_box)
         self.setLayout(dlg_layout)

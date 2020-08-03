@@ -1,16 +1,16 @@
 {
-  "title": "GéoGrandEst",
+  "title": "GéoBretagne",
   "description": "",
   "type": "folder",
   "children": [{
       "title": "Fonds raster",
-      "description": "Fonds cartographique décrivant la nature du terrain",
+      "description": "Fonds cartographiques raster",
       "type": "folder",
       "children": [{
-          "title": "Scan 25",
-          "description": "Scan25 (version topographique) de l'IGN Bretagne",
+          "title": "Scan IGN",
+          "description": "Scans de l'IGN (affichage du scan selon l'échelle)",
           "type": "wms_layer",
-          "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-SCAN25-2005-CIGAL",
+          "metadata_url": "http://www.ign.fr/",
           "params": {
             "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
             "name": "carte",
@@ -19,9 +19,9 @@
           }
         },
         {
-          "title": "Ortho",
-          "description": "Ortho",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "title": "Orthophoto",
+          "description": "Orthophoto",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731",
           "type": "wms_layer",
           "params": {
             "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
@@ -29,10 +29,34 @@
             "format": "image/jpeg",
             "srs": "EPSG:2154"
           }
+        },
+        {
+          "title": "Orthophoto infrarouge",
+          "description": "Orthophoto infrarouge",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/434b82a8-8d3c-4d9f-9eb3-0485f1a63eb6",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "satellite-ir",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Orthophoto ancienne",
+          "description": "Orthophoto des années 50",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/048622c5-b333-4c2b-94ec-40a41608dc06",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "satellite-ancien",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
         }
 		]
 	},
-	  {
+	{
 	  "title": "Fonds OpenStreetMap",
       "description": "Fonds OpenStreetMap",
       "type": "folder",
@@ -76,6 +100,151 @@
       ]
     },
     {
+      "title": "Alimétrie",
+      "description": "Données concernant l'altimétrie",
+      "type": "folder",
+      "children": [{
+          "title": "MNT 20m sans ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 20m sans ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9ce21e50-febf-4eac-8c51-a07be58d2f94",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt20so",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT 20m avec ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 20m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9bdc8e9a-59fc-42ea-a91f-a98ced95e273",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt20ao",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT 5m sans ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 5m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4ac04028-fb34-475d-96f8-b1218b396c38",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5so",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT 5m avec ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 5m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b0bb2067-157f-477d-951d-09b1fa0e98ef",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5ao",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT carte des pentes",
+          "description": "Modèle Numérique de Terrain (MNT) précision 5m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2e2709c3-b285-4e54-a688-dfa9f9a43553",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5so-slope",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT carte ombrage",
+          "description": "Modèle Numérique de Terrain ombré Bretagne Megalis pas 5m",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ab63233d-38f2-4f2e-8c45-5c4357d63c4b",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5so-shade",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "Courbes de niveaux",
+          "description": "Modèle Numérique de Terrain Bretagne Megalis pas 5m : carte des pentes",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b25d9b2c-369d-49b3-8e61-7ea47b89dbda",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "courbes-20m-10m-aoa",
+            "srs": "epsg:2154"
+          }
+        }
+	  ]
+	},
+    {
+      "title": "Cadastre",
+      "description": "Données concernant le cadastre",
+      "type": "folder",
+      "children": [{
+          "title": "Cadastre complet",
+          "description": "Cadastre isssu du site cadastre.gouv.fr",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8728b29d-267e-4d31-bad7-de528ba9c899",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://kartenn.region-bretagne.fr:443/ws/cadastre/france.wms",
+            "format": "image/png",
+            "name": "AMORCES_CAD,LIEUDIT,CP.CadastralParcel,SUBFISCAL,CLOTURE,DETAIL_TOPO,HYDRO,VOIE_COMMUNICATION,BU.Building,BORNE_REPERE",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "Parcelles",
+          "description": "Parcelles (cadastre DGFip)",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4977b285-158f-4990-bc24-92fe25b83901",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/cadastre/wms",
+            "format": "image/png",
+            "name": "CP.CadastralParcel",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Sections",
+          "description": "Sections (cadastre DGFip)",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/63c700b1-943d-4409-88f0-2bdf904208bd",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/cadastre/wms",
+            "format": "image/png",
+            "name": "CP.CadastralZoning",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Bâti",
+          "description": "Bâti (cadastre DGFip)",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/cadastre/wms",
+            "format": "image/png",
+            "name": "CP.CadastralBuilding",
+            "srs": "EPSG:2154",
+			"style": "cadastre:cadastre_bati_type"
+          }
+        }
+	  ]
+	},
+    {
       "title": "Limites administratives",
       "description": "Données concernant les limites administratives",
       "type": "folder",
@@ -85,9 +254,9 @@
 		  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=8b9bc237-0195-46f7-b92e-d923257e4b05",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://geobretagne.fr/geoserver/geo_loc/wfs",
+            "url": "https://geobretagne.fr/geoserver/geor_loc/wfs",
             "version": "2.0.0",
-            "name": "REGION",
+            "name": "geor_loc:REGION",
             "srs": "epsg:2154"
           }
         },
@@ -99,7 +268,7 @@
           "params": {
             "url": "https://geobretagne.fr/geoserver/ign/wfs",
             "version": "2.0.0",
-            "name": "departement_metro",
+            "name": "ign:departement_metro",
             "srs": "epsg:2154"
           }
         },
@@ -111,7 +280,7 @@
           "params": {
             "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
             "version": "2.0.0",
-            "name": "EPCI_053",
+            "name": "dreal_b:EPCI_053",
             "srs": "epsg:2154"
           }
         },
@@ -123,8 +292,9 @@
           "params": {
             "url": "https://geobretagne.fr/geoserver/ign/wfs",
             "version": "2.0.0",
-            "name": "commune_metro",
-            "srs": "epsg:2154"
+            "name": "ign:commune_metro",
+            "srs": "epsg:2154",
+			"filter": "insee_reg = '53'"
           }
         },
 		{
@@ -135,7 +305,7 @@
           "params": {
             "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
             "version": "2.0.0",
-            "name": "n_scot",
+            "name": "dreal_b:n_scot",
             "srs": "epsg:2154"
           }
         },
@@ -147,7 +317,7 @@
           "params": {
             "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
             "version": "2.0.0",
-            "name": "n_pays",
+            "name": "dreal_b:n_pays",
             "srs": "epsg:2154"
           }
         }
