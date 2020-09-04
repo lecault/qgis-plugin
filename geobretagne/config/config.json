@@ -320,8 +320,155 @@
             "name": "dreal_b:n_pays",
             "srs": "epsg:2154"
           }
+        },
+		{
+          "title": "Périmètre des SCOT",
+          "description": "Données des Schémas de COhérence Territoriale de Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91117783-14f0-409c-961e-9d2645f248ea",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:n_scot",
+            "srs": "epsg:2154"
+          }
         }
       ]
+    },
+    {
+      "title": "Environnement",
+      "description": "Données concernant la thématique environnement",
+      "type": "folder",
+      "children": [{
+          "title": "Eau",
+          "description": "Données concernant la thématique eau",
+          "type": "folder",
+          "children": [{
+			  "title": "SAGE",
+			  "description": "Schémas d'aménagement et de gestion des eaux (SAGE) en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e718b2fe-f3d0-4c56-a0c0-bf61d31a857b",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:sage_dreal",
+				"srs": "epsg:2154"
+			  }
+			}
+		]
+		},
+		{
+          "title": "Espaces protégés",
+          "description": "Données concernant la thématique des espaces protégés",
+          "type": "folder",
+          "children": [{
+			  "title": "Parcs naturels régionaux",
+			  "description": "Parcs naturels régionaux actifs et en projet de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9df1d4b7-221c-4424-af3f-50a898e3d333",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:parc_naturel_regional",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Réserves naturelles régionales",
+			  "description": " Réserves naturelles régionales de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:reserve_naturelle_regionale",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Côtes d'Armor",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Côtes d'Armor",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a2e41fd6-e22c-4d6a-a178-9fa2c5abc346",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd22/wfs",
+				"version": "2.0.0",
+				"name": "cd22:site_espace_naturel_sensible_poly_22",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Finistère",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Finistère",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/94591e3f-82b8-46c6-a15b-60b88f977d89",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd29/wfs",
+				"version": "2.0.0",
+				"name": "cd29:espace_naturel_protege_propriete_29",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Ille-et-Vilaine",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Ille-et-Vilaine",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/93361902-63ba-4bd4-8bdb-27b4c813bf69",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd35/wfs",
+				"version": "2.0.0",
+				"name": "cd35:site_espace_naturel_protege_poly_35",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Morbihan",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Morbihan",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d61e6d3c-2b16-4019-a7d1-e9b3163aeb1d",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd56/wfs",
+				"version": "2.0.0",
+				"name": "cd56:site_espace_naturel_protege_poly_56",
+				"srs": "epsg:2154"
+			  }
+			}
+			]
+		}
+      ]
+    },
+    {
+      "title": "Transport",
+      "description": "Données concernant la thématique transport",
+      "type": "folder",
+      "children": [{
+          "title": "Gare ferroviaire",
+          "description": "Gares ferroviaires Bretagne Pays de Loire",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/232517e0-5b48-11de-b5dc-0000c0a8230c",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/sncf/wfs",
+            "version": "2.0.0",
+            "name": "sncf:gare_ferroviaire",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Ligne ferroviaire",
+          "description": "Lignes ferroviaires Bretagne Pays de Loire",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/sncf/wfs",
+            "version": "2.0.0",
+            "name": "sncf:ligne_ferroviaire",
+            "srs": "epsg:2154"
+          }
+        }
+
+      ]
     }
+
+	
   ]
 }

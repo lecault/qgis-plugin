@@ -69,7 +69,7 @@ class SimpleAccessPlugin:
         """
         plugin_menu = self.iface.pluginMenu()
         ##self.plugin_menu = QMenu(u"Géo2France", plugin_menu)
-        self.plugin_menu = QMenu(u"GéoGrandEst", plugin_menu)
+        self.plugin_menu = QMenu(u"GéoBretagne", plugin_menu)
         plugin_menu.addMenu(self.plugin_menu)
 
         show_panel_action = QAction(u'Afficher le panneau latéral', self.iface.mainWindow())
